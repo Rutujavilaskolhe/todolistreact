@@ -1,14 +1,14 @@
 import "./App.css";
-import ListFooter from "./ListFooter/ListFooter";
-import ListHeader from "./ListHeader/ListHeader";
+import ListHeader from './Components/ListHeader/ListHeader'
+import ListFooter from './Components/ListFooter/ListFooter';
 import Home from "./Pages/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <>
-      <ListHeader />
+     <ListHeader/>
       <Home />
-      <ListFooter />
+   <ListFooter />
     </>
   );
 }

@@ -1,9 +1,8 @@
-const List = ({task}) => {
-const listItems= task.map((task,index) => <li key={index}>task</li>)
-  return (
-    <ul>
-      {listItems}
-    </ul>
-  );
+// eslint-disable-next-line react/prop-types
+const List = ({ message }) => {
+  // eslint-disable-next-line react/prop-types
+  const listitem = message.map((val, index) => <li key={index}>{val}</li>);
+
+  return <ul>{listitem}</ul>;
 };
 export default List;
